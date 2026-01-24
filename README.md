@@ -3,7 +3,6 @@
 This Android application is a simple Registration Form developed using Jetpack Compose and Material 3.  
 It allows users to enter personal details, select a role, and validates the input before registration.
 
----
 
 ## Project Description
 
@@ -16,7 +15,6 @@ The Registration Form App collects the following details from the user:
 If any field is left empty, an error message is shown using a Snackbar.  
 If all fields are filled, a success message is displayed.
 
----
 
 ## Technologies Used
 
@@ -26,9 +24,6 @@ If all fields are filled, a success message is displayed.
 - Android Studio
 - Kotlin Coroutines
 
----
-
----
 
 ## File Structure
 
@@ -40,8 +35,6 @@ com.example.compose
 │ └── GreetingPreview10 (Preview Function)
 
 
----
-
 ## App Workflow
 
 1. Application starts from `RegestrationFormCa2`.
@@ -51,7 +44,6 @@ com.example.compose
    - If any field is empty, a Snackbar shows an error message.
    - If all fields are filled, a Snackbar shows a success message.
 
----
 
 ## Validation Logic
 
@@ -65,8 +57,6 @@ role.isBlank()
 
 If any of the above conditions is true, registration is not allowed.
 
----
-
 ## UI Components Used
 
 - Scaffold
@@ -79,13 +69,10 @@ If any of the above conditions is true, registration is not allowed.
 - SnackbarHost
 - MaterialTheme
 
----
 
 ## Preview Support
 
 The app includes a Compose Preview to test the UI without running the application.
-
----
 
 ## How to Run the Project
 
@@ -93,7 +80,6 @@ The app includes a Compose Preview to test the UI without running the applicatio
 2. Ensure Jetpack Compose is enabled.
 3. Run the application on an emulator or physical device.
 
----
 
 ## Future Enhancements
 
@@ -103,13 +89,11 @@ The app includes a Compose Preview to test the UI without running the applicatio
 - Navigation to another screen after registration
 - Dark mode support
 
----
 
 ## Conclusion
 
 This project demonstrates the use of Jetpack Compose for building modern Android UIs with proper state handling and validation.
 
----
 
 ## License
 
