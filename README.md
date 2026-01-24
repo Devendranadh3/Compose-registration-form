@@ -1,142 +1,119 @@
-📱 Registration Form App (Jetpack Compose)
+# Registration Form App – Jetpack Compose
 
-A simple Android Registration Form built using Jetpack Compose and Material 3.
-This app collects user details and validates input before showing feedback using a Snackbar.
+This Android application is a simple Registration Form developed using Jetpack Compose and Material 3.  
+It allows users to enter personal details, select a role, and validates the input before registration.
 
-🚀 Features
+---
 
-Modern UI using Jetpack Compose
+## Project Description
 
-Material 3 design components
+The Registration Form App collects the following details from the user:
+- Name
+- Email
+- Phone Number
+- Role (Student / Professional)
 
-User input fields:
+If any field is left empty, an error message is shown using a Snackbar.  
+If all fields are filled, a success message is displayed.
 
-Name
+---
 
-Email
+## Technologies Used
 
-Phone Number
+- Kotlin
+- Jetpack Compose
+- Material 3
+- Android Studio
+- Kotlin Coroutines
 
-Role selection using Radio Buttons
+---
 
-Student
+---
 
-Professional
+## File Structure
 
-Input validation
-
-Snackbar messages for:
-
-Missing fields
-
-Successful registration
-
-Preview support using @Preview
-
-🛠️ Tech Stack
-
-Language: Kotlin
-
-UI Toolkit: Jetpack Compose
-
-Design System: Material 3
-
-Architecture: Single Activity (Compose-based)
-
-Async Handling: Kotlin Coroutines
-
-📂 Project Structure
 com.example.compose
 │
 ├── RegestrationFormCa2.kt
-│   ├── RegestrationFormCa2 (Activity)
-│   ├── RegistrationApp (Composable)
-│   ├── GreetingPreview10 (Preview)
-
-🧩 How the App Works
-
-App launches RegestrationFormCa2 activity.
-
-RegistrationApp() composable is set as the UI.
-
-User enters:
-
-Name
-
-Email
-
-Phone number
-
-Selects a role
-
-On clicking Register:
-
-If any field is empty → Snackbar shows an error message.
-
-If all fields are filled → Snackbar shows success message.
-
-🖼️ UI Components Used
-
-Scaffold
-
-Column, Row, Spacer
-
-TextField
-
-RadioButton
-
-Button
-
-SnackbarHost
-
-MaterialTheme
-
-🔍 Validation Logic
-if (name.isBlank() || email.isBlank() || phone.isBlank() || role.isBlank()) {
-    // Show error snackbar
-} else {
-    // Show success snackbar
-}
-
-🧪 Preview
-
-The app includes a Compose preview:
-
-@Preview(showBackground = true)
-@Composable
-fun GreetingPreview10() {
-    RegistrationApp()
-}
+│ ├── RegestrationFormCa2 (Main Activity)
+│ ├── RegistrationApp (Composable Function)
+│ └── GreetingPreview10 (Preview Function)
 
 
-This allows UI testing directly inside Android Studio without running the app.
+---
 
-▶️ How to Run
+## App Workflow
 
-Open the project in Android Studio
+1. Application starts from `RegestrationFormCa2`.
+2. `RegistrationApp()` is set as the UI using `setContent`.
+3. User enters name, email, phone number, and selects a role.
+4. On clicking the Register button:
+   - If any field is empty, a Snackbar shows an error message.
+   - If all fields are filled, a Snackbar shows a success message.
 
-Make sure:
+---
 
-Kotlin is enabled
+## Validation Logic
 
-Jetpack Compose is properly configured
 
-Click Run ▶️
 
-Test the registration form on an emulator or real device
+name.isBlank()
+email.isBlank()
+phone.isBlank()
+role.isBlank()
 
-📌 Future Enhancements (Optional)
 
-Email & phone number format validation
+If any of the above conditions is true, registration is not allowed.
 
-Save data using Room or Firebase
+---
 
-Add dropdown for role selection
+## UI Components Used
 
-Navigation to another screen after successful registration
+- Scaffold
+- Column
+- Row
+- Text
+- TextField
+- RadioButton
+- Button
+- SnackbarHost
+- MaterialTheme
 
-Dark mode support
+---
 
-📜 License
+## Preview Support
+
+The app includes a Compose Preview to test the UI without running the application.
+
+---
+
+## How to Run the Project
+
+1. Open the project in Android Studio.
+2. Ensure Jetpack Compose is enabled.
+3. Run the application on an emulator or physical device.
+
+---
+
+## Future Enhancements
+
+- Email format validation
+- Phone number length validation
+- Database integration (Room / Firebase)
+- Navigation to another screen after registration
+- Dark mode support
+
+---
+
+## Conclusion
+
+This project demonstrates the use of Jetpack Compose for building modern Android UIs with proper state handling and validation.
+
+---
+
+## License
 
 This project is created for educational purposes and can be freely modified and reused.
+
+## Package Name
+
