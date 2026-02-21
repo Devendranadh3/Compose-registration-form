@@ -87,8 +87,6 @@ The app includes a Compose Preview to test the UI without running the applicatio
 - Phone number length validation
 - Database integration (Room / Firebase)
 - Navigation to another screen after registration
-- Dark mode support
-
 
 ## Conclusion
 
